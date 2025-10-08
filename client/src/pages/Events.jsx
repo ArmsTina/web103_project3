@@ -49,14 +49,14 @@ function Events() {
     <div className="flex flex-wrap space-y-4">
       <div className="menu w-full">
         <div className="dropdown">
-          <label>
+          <label className="border-1 rounded-sm border-indigo-600">
             Filter by continents:{" "}
             <select
               name="continent"
               id="continentMenu"
               onChange={(e) => setFilter(e.target.value)}
             >
-              <option value="All"></option>
+              <option value="All">All</option>
               <option value="Africa">Africa</option>
               <option value="Asia">Asia</option>
               <option value="Europe">Europe</option>
